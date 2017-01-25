@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+
+        <title>Payment Form</title>
+
+        <!-- Custom styles for this template -->
+        <link href="stylesheets/css/main.css" rel="stylesheet">
+
+
+      
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+    <body>
+
+          <main class="pad-body">
+
+        <div class="payment-container">
+            <div class="payment-header"><img src="images/lipisha.png"></div>
+            <div class="total-cost">
+                <div class="total-cost__value">Ksh 5000</div>
+            </div>
+            <form id="FrmCheckout" action="">
+
+                <div class="form--pad">
+                    <div class="form__row">
+                        <label for="" class="form__label">Card Number</label>
+                        <div class="input-section">
+                            <input id="card_number" type="text" class="form__input" maxlength="16">
+                            <div class="input-section__icon"></div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <label for="" class="form__label">Card Holder Name</label>
+                        <div class="input-section">
+                            <input id="name" type="text" class="form__input">
+                            <div class="input-section__icon"></div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                            <label for="" class="form__label">Expiry Date</label>
+                            <div class="outer-container">
+                                <div class="form__col--6">
+                                    <div class="input-section">
+                                    <select name='month' id='month' class="form__input">
+                                        <option value=''>Month</option>
+                                        <option value='01'>January</option>
+                                        <option value='02'>February</option>
+                                        <option value='03'>March</option>
+                                        <option value='04'>April</option>
+                                        <option value='05'>May</option>
+                                        <option value='06'>June</option>
+                                        <option value='07'>July</option>
+                                        <option value='08'>August</option>
+                                        <option value='09'>September</option>
+                                        <option value='10'>October</option>
+                                        <option value='11'>November</option>
+                                        <option value='12'>December</option>
+                                    </select>
+                                        <div class="input-section__icon"></div>
+                                    </div>
+                                </div>
+                                <div class="form__col--6">
+                                    <div class="input-section">
+                                        <select name='expireYY' id='expireYY' class="form__input">
+                                        <option value=''>Year</option>
+                                        <option value='2010'>2010</option>
+                                        <option value='2011'>2011</option>
+                                        <option value='2013'>2012</option>
+                                    </select>
+                                        <div class="input-section__icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="form__row">
+                        <div class="outer-container">
+                            <div class="form__col--6">
+                                <label for="" class="form__label">CVV</label>
+                                <div class="input-section">
+                                    <input id="cvv" type="text" class="form__input" maxlength="3">
+                                    <div class="input-section__icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <p class="form__caption">If you don't cancel your subscription before thecharged.</p>
+                    </div>
+                </div>
+                <div class="form__row form__row--noMargin">
+                    <button class="btn btn--primary btn--block" id="BtnPay">Pay Ksh 5000</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    </body>
+</html>
